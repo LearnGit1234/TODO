@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BabyDev TodoList</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./Camera Roll/WIN_20231207_08_34_57_Pro.jpg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container smoothTrans">
+      <div class="headerMainWrapper">
+        <header class="">
+          <nav class="span">BabyDev || TodoList</nav>
+          <div class="toggle cursor-p"></div>
+        </header>
+
+        <main class="main smoothTrans">
+          <!-- ...form.... -->
+          <form action="" class="taskListInput">
+            <label for="">Task list</label>
+            <input
+              type="text"
+              name=""
+              class="userInput smoothTrans"
+              placeholder="New Task"
+              maxlength="29"
+              required
+            />
+            <button type="submit" class="addTask cursor-p">Add task</button>
+          </form>
+          <!-- .......... -->
+          <div class="outputSectionWrapper">
+            <h3>Tasks</h3>
+            <ul class="outputSection"></ul>
+            <div
+              class="clear cursor-p"
+              title="Clears all task listed above if any!"
+            >
+              Clear Task
+            </div>
+          </div>
+        </main>
+      </div>
+      <footer>&copy;2024</footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
