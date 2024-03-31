@@ -1,185 +1,402 @@
-@import url("./utility.css");
+@import url("utility.css");
 
 * {
-  margin: 0;
+  box-sizing: border-box;
   padding: 0;
-  /* outline: 1px solid rgb(233, 10, 10); */
-}
-
-:root {
-  --colorbg: rgb(40, 100, 136);
-  --softgreen: rgba(66, 115, 66, 0.878);
-}
-
-html {
-  scroll-behavior: smooth;
-}
-.smoothTrans {
-  transition: all 0.5s ease-out;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 100vw;
-  min-height: 100vh;
-  gap: 5rem;
-  /* background-color: aqua; */
-}
-.outputSectionWrapper {
-  margin-left: 2%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  /* gap: 10px; */
-}
-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 10vh;
-  border: 1px solid black;
-  max-width: 100%;
-  background-color: var(--colorbg);
-}
-header nav {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: larger;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-header div {
-  height: 2rem;
-  width: 2rem;
-  border-radius: 50%;
-  background-color: black;
-  border: rgb(255, 255, 255) solid 2px;
-}
-
-main {
-  border: 1px solid black;
-  width: 90%;
-  margin: 0 auto;
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-  margin-top: 1%;
-}
-
-form {
-  height: 30vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding-left: 10px;
-  margin-bottom: 10px;
-}
-
-input {
-  all: unset;
-  width: 80%;
-  border-bottom: 1px solid black;
-  font-size: larger;
-}
-label {
-  font-size: 2rem;
-  font-weight: bolder;
-  letter-spacing: 3px;
-}
-
-label,
-input {
-  display: block;
+  margin: 0;
+  font-family: nunito;
+  /* outline: 1px solid red; */
 }
 
 button {
-  all: unset;
-  background: var(--colorbg);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  width: 20%;
-  text-align: center;
-}
-
-ul li {
-  display: flex;
-  background-color: var(--colorbg);
-  color: white;
-  justify-content: space-between;
-  padding: 0 10px;
-  font-size: 1.5rem;
-  margin: 4px;
-  max-width: 90%;
-}
-ul li b {
-  width: 50%;
-  font-family: nunito;
-  font-weight: 100;
-  font-size: 1.1rem;
-  text-transform: capitalize;
-}
-ul li span {
-  color: red;
-  width: 10%;
-  display: flex;
-  justify-content: center;
-}
-
-.clear {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(100, 21, 21);
-  color: white;
-  padding: 1rem;
-  width: 20%;
-  border-radius: 1rem;
-  white-space: nowrap;
-}
-
-/* ...FOOTER... */
-
-footer {
-  margin-top: -1%;
-  width: 100%;
-  height: 5dvh;
-  display: flex;
-  justify-content: center;
-}
-span {
   cursor: pointer;
-}
-
-.darkMode {
-  border: 1px solid white;
-  color: white;
-  background-color: black;
-}
-.blackbg {
-  background-color: black;
-  color: white;
-}
-.inputDark {
-  border-bottom: 1px solid rgb(255, 255, 255);
 }
 .cursor-p {
   cursor: pointer;
 }
 
-.d-None {
-  display: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 950px) {
-  main {
-    width: 50%;
+:root {
+  --color: rgb(30, 52, 114);
+}
+
+.largeImg {
+  display: none;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+figure,
+li {
+  height: 4rem;
+  width: 4rem;
+}
+.header-list {
+  display: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  gap: 1rem;
+  width: 90vw;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+/* CSS STYLE FOR HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+
+.iconCommune {
+  width: 20%;
+  height: 40%;
+}
+
+.hamburger {
+  height: 30%;
+  width: 20%;
+}
+
+/* CSS for MAIN */
+
+main {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.weBuild {
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.learnMore {
+  background-color: var(--color);
+  text-align: center;
+  align-self: center;
+  width: 85%;
+  font-size: 1rem;
+  color: white;
+  border-radius: 1.5rem;
+  padding: 5px 10px;
+}
+
+.learnMore a {
+  color: white;
+}
+
+.build {
+  align-self: center;
+  min-height: 40%;
+  text-align: center;
+  width: 65%;
+  color: var(--color);
+}
+
+.commune {
+  text-align: center;
+  align-self: center;
+  width: 82%;
+}
+
+.emaiForm {
+  /* background-color: red; */
+  height: 12vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.emaiForm :first-child {
+  width: 100%;
+  height: 4rem;
+  padding-left: 10px;
+  width: 90%;
+  align-self: center;
+}
+.emaiForm :last-child {
+  all: unset;
+  align-self: center;
+  width: 90%;
+  text-align: center;
+  background-color: var(--color);
+  color: white;
+  height: 4rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* CSS FOR FOOTER */
+footer {
+  height: 15vh;
+  margin-bottom: 1rem;
+}
+footer p {
+  font-weight: bolder;
+  padding-left: 1rem;
+  margin-bottom: 10px;
+}
+
+footer ul {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  row-gap: 10px;
+}
+
+footer li {
+  height: 2rem;
+}
+/* TABLET STYLES */
+@media screen and (min-width: 1000px) {
+  .weBuild {
+    min-height: 80vh;
+    gap: 0;
   }
+
+  .learnMore {
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+  }
+
+  .build {
+    font-size: 4rem;
+    width: 90%;
+  }
+  .commune {
+    font-size: 1.4rem;
+    width: 93%;
+  }
+  .emaiForm {
+    height: 12;
+    width: 80%;
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+  .emaiForm :first-child {
+    width: 70%;
+    height: 3rem;
+  }
+  .emaiForm :last-child {
+    height: 3rem;
+    width: 25%;
+    background-color: var(--color);
+  }
+  footer ul {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(7, 12%);
+  }
+  footer {
+    padding-left: 2.5rem;
+  }
+}
+
+/* LAPTOP STYLES */
+
+@media screen and (min-width: 1350px) {
+  .container {
+    min-height: 100vh;
+  }
+
+  header {
+    height: 15vh;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .header-list {
+    display: flex;
+  }
+  .header-list:last-child {
+    background: var(--bgBlue);
+    color: black;
+  }
+  .largeImg {
+    display: block;
+    align-self: center;
+  }
+
+  /* .... */
+
+  /* HEADER STYLES */
+
+  header {
+    /* height: 10%; */
+  }
+  .iconCommune {
+    height: 70%;
+    width: 20%;
+    align-self: center;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .iconCommune img {
+    width: 70%;
+  }
+
+  header ul {
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+  }
+  header ul li {
+    height: 50%;
+    width: 60%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+  }
+
+  header ul li:last-child {
+    width: 50%;
+    height: 45%;
+  }
+
+  header ul li button {
+    color: white;
+    background: var(--color);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+  }
+  /* STYLES FOR MAIN */
+
+  main {
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  main .largeImg {
+    height: 80%;
+    width: 27%;
+  }
+
+  .weBuild {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+  }
+  .beeld {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  .learnMore {
+    height: 10%;
+    background-color: var(--color);
+    color: white;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding-left: 10px;
+    transform: translateX(-3.5rem);
+  }
+
+  .learnMore a {
+    all: unset;
+    text-decoration: underline;
+  }
+
+  .build {
+    font-size: 5rem;
+    min-height: 20%;
+    text-align: left;
+    margin: -5rem;
+    display: flex;
+    line-height: 6rem;
+    align-items: flex-end;
+  }
+
+  .commune {
+    height: 20%;
+    font-size: 1.4rem;
+    text-align: left;
+    transform: translateX(12px);
+  }
+  .emaiForm {
+    transform: translateX(-3.4rem);
+    margin-top: -5rem;
+    justify-content: space-between;
+  }
+
+  form input {
+    height: 100%;
+    width: 50%;
+    font-size: 1.2rem;
+    padding-left: 15px;
+  }
+
+  form button {
+    all: unset;
+    background: var(--bgBlue);
+    color: white;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.4rem;
+  }
+
+  /* STYLE FOR FOOTER */
+
+  /* footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 12%;
+  }
+
+  footer p {
+    font-weight: bolder;
+    font-size: 1.4rem;
+  }
+
+  footer ul {
+    display: flex;
+    gap: 1%;
+  }
+
+  footer ul li {
+    height: 3rem;
+    width: 4rem;
+    cursor: pointer;
+  } */
 }

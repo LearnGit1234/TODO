@@ -13,7 +13,7 @@ function submeet(e){
  let  taskTodo = new TodoInput(task);
 
  let appendedTask=`
- <li> ${taskTodo.task} <span class="deleteBtn">x</span></li>
+ <li> ${taskTodo.task} <span class="deleteBtn cursor-p">x</span></li>
  `;
 
  outputDisplay.innerHTML += appendedTask;

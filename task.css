@@ -1,0 +1,192 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5rem;
+}
+header {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid green;
+  background: white;
+}
+
+header :first-child {
+  font-size: larger;
+}
+
+header div {
+  background-color: green;
+  height: 50%;
+  width: 5%;
+  border-radius: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  min-height: 70vh;
+  padding: 0 2rem;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* Dynamic insertion style */
+.deleteBtn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 4rem;
+  border: 1px solid black;
+}
+
+.deleteBtn.WhiteBorder {
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.deleteBtn span {
+  display: grid;
+  place-items: center;
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  width: 5%;
+}
+/*  */
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  background-color: green;
+  color: white;
+  height: 5vh;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.outputSectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.outputSectionWrapper h3 {
+  text-align: center;
+}
+
+/* form */
+.taskListInput {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  height: 5vh;
+  /* border: 1px solid green; */
+}
+
+.taskListInput label {
+  font-size: larger;
+  font-weight: bolder;
+  color: rgb(8, 81, 8);
+}
+
+.taskListInput input {
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}
+
+.taskListInput button {
+  background: green;
+  height: 100%;
+  color: white;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
+
+.clear {
+  text-align: center;
+  color: whitesmoke;
+  color: red;
+  border: 1px solid red;
+  width: 15%;
+  align-self: center;
+  border-radius: 10px;
+}
+
+.blackbg {
+  background: black;
+  color: white;
+}
+
+.whiteText {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 530px) {
+  header {
+    font-size: 10px;
+  }
+
+  .taskListInput {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    height: 10vh;
+    border: 1px solid green;
+    border: none;
+  }
+
+  .taskListInput input {
+    /* align-self: flex-start; */
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .clear {
+    width: 50%;
+  }
+
+  .deleteBtn {
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 2px;
+    border: 1px solid black;
+    margin-top: 2px;
+    font-size: 10px;
+  }
+
+  .deleteBtn span {
+    width: 10%;
+  }
+}
