@@ -79,15 +79,7 @@ function fromDOMDisplay(){
 
 function delButton(e){
 
-  setTimeout(() => {
-    let message = document.createElement("h1");
-    message.innerHTML = " Task removed "
-    message.style.cssText = "color:white; background:red; font-size:1rem ; text-align:center;"
-    main.insertBefore(message ,  form)
-    setTimeout(() => {
-      message.style.display = "none"
-    }, 500);
-   }, 100);
+  
   //  .........
 
     let clicked = e.target;
@@ -96,6 +88,15 @@ function delButton(e){
       // console.log(content.textContent)
    if(confirm("you sure?")){
      clicked.parentElement.style.display = "none";
+     setTimeout(() => {
+      let message = document.createElement("h1");
+      message.innerHTML = " Task removed "
+      message.style.cssText = "color:white; background:red; font-size:1rem ; text-align:center;"
+      main.insertBefore(message ,  form)
+      setTimeout(() => {
+        message.style.display = "none"
+      }, 500);
+     }, 100);
    }
       // clear from ls
     
