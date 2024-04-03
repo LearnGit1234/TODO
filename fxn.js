@@ -10,7 +10,7 @@ class TodoInput{
 
 function taskDisplay(e){ 
     e.preventDefault(); 
-    clear.style.display = "block";
+    clear.classList.remove("d-None");
    setTimeout(() => {
     let message = document.createElement("h1");
     message.innerHTML = " Task added "
@@ -136,10 +136,10 @@ function clearButton(){
             message.style.display = "none"
           }, 1500);
          }, 100);
-        
+        clear.classList.add("d-None");
         outputDisplay.innerHTML = "" ;
         localStorage.clear();
-        clear.style.display = "none";
+       
       }
 
     

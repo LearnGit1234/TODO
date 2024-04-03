@@ -150,6 +150,9 @@ footer {
 .whiteText {
   color: rgb(0, 0, 0);
 }
+.d-None {
+  display: none;
+}
 
 @media screen and (max-width: 530px) {
   header {
