@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded" ,fromDOMDisplay);
    console.log("hi")
    document.body.classList.toggle("blackbg");
    BabyDev.classList.toggle("whiteText");
+   
   
   })
 
